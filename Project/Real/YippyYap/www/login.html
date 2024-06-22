@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/login.js"></script>
+
+    <div class="login-form">
+        <img src="img/looogo.jpeg" alt="Logo" class="logo">
+
+
+        <form>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label class="checkbox-label">
+                <input type="checkbox" id="remember" name="remember">
+                Remember me
+            </label>
+            
+            <button type="button" onclick="window.location.href='register.html'">Register</button>
+            <button type="submit" onclick="window.location.href='home.html'">Login</button>
+            <a href="forgotPass.html" class="forgot-password" onclick="forgotPassword()">Forgot Password?</a>
+        </form>
+    </div>
+   
+</body>
+</html>
